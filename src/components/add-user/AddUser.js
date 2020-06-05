@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 
-const AddUser = ({ addUser }) => {
+const AddUser = ({ addUser, users }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+
   const handleSubmit = (e) => {
-    addUser(name, email, phone);
     e.preventDefault();
+    addUser(name, email, phone);
   };
 
   return (
