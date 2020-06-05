@@ -1,0 +1,32 @@
+.navbarWrapper {
+  display: grid;
+  grid-template-columns: 50px 25% auto 25% 50px;
+  grid-template-rows: 50px;
+  background: #ccc;
+  margin: 0 auto;
+  padding: 1px;
+}
+.links {
+  display: inline-flex;
+  grid-column: 4/5;
+  grid-row: 1/1;
+  list-style: none;
+  padding: 0;
+}
+.title {
+  display: inline-block;
+  font-size: 40px;
+  color: white;
+  margin: 0 auto;
+  grid-column: 2/3;
+  grid-row: 1/1;
+  padding: 0;
+
+}
+.linkItem {
+  margin: 0 30px;
+}
+.linkItem a {
+  color: white;
+  text-decoration: none;
+}
