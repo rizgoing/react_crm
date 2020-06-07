@@ -7,8 +7,6 @@ import SearchUser from "../search-user/SearchUser";
 const Users = () => {
   const [users, setUser] = useState([]);
   const [search, setSearch] = useState("");
-  const [searchResults, setSearchResults] = useState("");
-
   const addUser = (name, email, phone) => {
     setUser([
       ...users,
@@ -22,19 +20,20 @@ const Users = () => {
   };
 
   const handleSearch = (e) => {
-    setSearch(e.target.value);
+    setSearch({ name: e });
   };
-  useEffect(() => {
-    const results = users.filter((user) => {
-      user.toLowerCase().includes(search.toLowerCase());
-      setSearchResults(results);
-    });
-  }, [search]);
+
+  const results = !search.name
+    ? users
+    : users.filter((user) =>
+        user.name.toLowerCase().includes(search.name.toLowerCase())
+      );
+
   return (
     <div className={style.usersPage}>
       <AddUser addUser={addUser} />
       <SearchUser search={handleSearch} />
-      <UserList users={searchResults} />
+      <UserList users={results} />
     </div>
   );
 };
