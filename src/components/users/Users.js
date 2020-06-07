@@ -7,7 +7,7 @@ import SearchUser from "../search-user/SearchUser";
 const Users = () => {
   const [users, setUser] = useState([]);
   const [search, setSearch] = useState("");
-  const addUser = (name, email, phone) => {
+  const addUser = (name, email, phone, pic) => {
     setUser([
       ...users,
       {
@@ -15,6 +15,7 @@ const Users = () => {
         name: name,
         email: email,
         phone: phone,
+        pic: pic,
       },
     ]);
   };

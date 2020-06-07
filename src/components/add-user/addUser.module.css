@@ -1,0 +1,76 @@
+.formWrap {
+  border: 3px solid rgba(91, 61, 116, 0.5);
+  max-width: auto;
+  margin: 10px auto;
+  padding: 25px;
+  display: inline-block;
+}
+.inputName {
+  text-align: center;
+  width: 300px;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid rgba(91, 61, 116, 0.781);
+}
+.inputName::placeholder {
+  text-align: center;
+  opacity: 0.5;
+}
+.inputName:focus {
+  outline: none;
+  text-align: center;
+}
+.inputEmail {
+  width: 300px;
+  text-align: center;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid rgba(91, 61, 116, 0.781);
+}
+.inputEmail::placeholder {
+  text-align: center;
+  opacity: 0.5;
+}
+.inputEmail:focus {
+  outline: none;
+  text-align: center;
+}
+.inputPhone {
+  width: 300px;
+  text-align: center;
+  margin: 10px;
+  border: none;
+  border-bottom: 2px solid rgba(91, 61, 116, 0.781);
+}
+.inputPhone::placeholder {
+  text-align: center;
+  opacity: 0.5;
+}
+.inputPhone:focus {
+  outline: none;
+  text-align: center;
+}
+.submitButton {
+  border: none;
+  background: #ccc;
+  width: 60px;
+  height: 30px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: none;
+}
+.inputPic {
+  border: 2px solid rgba(91, 61, 116, 0.781);
+  font-size: 14px;
+  padding: 4px;
+  color: white;
+  background-color: rgba(91, 61, 116, 0.781);
+}
+.inputPic:hover {
+  cursor: pointer;
+}
+.inputPic:focus {
+  outline: none;
+  text-align: center;
+}

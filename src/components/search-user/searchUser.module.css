@@ -1,0 +1,19 @@
+.searchWrap {
+  display: grid;
+}
+.searchBar {
+  height: 30px;
+  max-width: 500px;
+  width: 450px;
+  margin: 10px auto;
+  border: none;
+  border-bottom: 2px solid rgba(91, 61, 116, 0.781);
+}
+.searchBar::placeholder {
+  text-align: center;
+  opacity: 0.5;
+}
+.searchBar:focus {
+  outline: none;
+  text-align: center;
+}
