@@ -1,14 +1,21 @@
 .formWrap {
   border: 3px solid rgba(91, 61, 116, 0.5);
-  max-width: auto;
+  background-color: rgba(230, 230, 250, 0.363);
+  min-width: 700px;
   margin: 10px auto;
   padding: 25px;
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+  grid-template-rows: 50% 50%;
+  grid-gap: 10px;
 }
 .inputName {
+  grid-row: 1/1;
+  grid-column: 1/1;
+  background: transparent;
   text-align: center;
-  width: 300px;
-  margin: 10px;
+  width: 220px;
+  margin: 0 auto;
   border: none;
   border-bottom: 2px solid rgba(91, 61, 116, 0.781);
 }
@@ -21,9 +28,12 @@
   text-align: center;
 }
 .inputEmail {
-  width: 300px;
+  background: transparent;
+  grid-row: 1/1;
+  grid-column: 2/2;
+  width: 220px;
   text-align: center;
-  margin: 10px;
+  margin: 0 auto;
   border: none;
   border-bottom: 2px solid rgba(91, 61, 116, 0.781);
 }
@@ -36,9 +46,12 @@
   text-align: center;
 }
 .inputPhone {
-  width: 300px;
+  background: transparent;
+  grid-row: 2/2;
+  grid-column: 1/1;
+  width: 220px;
   text-align: center;
-  margin: 10px;
+  margin: 0 auto;
   border: none;
   border-bottom: 2px solid rgba(91, 61, 116, 0.781);
 }
@@ -51,21 +64,25 @@
   text-align: center;
 }
 .submitButton {
+  grid-row: 2/2;
+  grid-column: 3/3;
   border: none;
-  background: #ccc;
+  background: rgba(126, 79, 170, 0.589);
   width: 60px;
   height: 30px;
   color: white;
   text-transform: uppercase;
-  margin: 0 auto;
-  display: none;
+  margin: 10px auto;
 }
 .inputPic {
-  border: 2px solid rgba(91, 61, 116, 0.781);
+  grid-row: 2/2;
+  grid-column: 2/2;
+  border: none;
+  border-bottom: 2px solid rgba(126, 79, 170, 0.589);
   font-size: 14px;
-  padding: 4px;
-  color: white;
-  background-color: rgba(91, 61, 116, 0.781);
+  color: rgba(126, 79, 170, 0.589);
+  margin: 10px 60px;
+  text-align: center;
 }
 .inputPic:hover {
   cursor: pointer;
@@ -73,4 +90,7 @@
 .inputPic:focus {
   outline: none;
   text-align: center;
+}
+.submitButton:hover {
+  cursor: pointer;
 }

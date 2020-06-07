@@ -7,7 +7,14 @@ const UserList = ({ users }) => {
     <div className={style.usersBlock}>
       {users.map((user) => {
         return (
-          <Link to={"/" + user.id} key={user.id} className={style.card}>
+          <Link
+            to={{
+              pathname: user.id,
+              state: { users },
+            }}
+            key={user.id}
+            className={style.card}
+          >
             <p className={style.userNameAndEmail}>Username: {user.name}</p>
             <img
               src={user.pic}
