@@ -1,6 +1,6 @@
 .formWrap {
-  border: 3px solid rgba(91, 61, 116, 0.5);
-  background-color: rgba(230, 230, 250, 0.363);
+  box-shadow: 5px 10px 15px 7px rgba(58, 58, 58, 0.301);
+  background-color: rgba(86, 100, 68, 0.281);
   min-width: 700px;
   margin: 10px auto;
   padding: 25px;
@@ -17,17 +17,23 @@
   width: 220px;
   margin: 0 auto;
   border: none;
-  border-bottom: 2px solid rgba(91, 61, 116, 0.781);
+  border-bottom: 2px solid rgba(105, 92, 77, 0.863);
+  font-size: 16px;
+  color: rgba(212, 211, 211, 0.842);
 }
 .inputName::placeholder {
   text-align: center;
   opacity: 0.5;
+  color: black;
+  font-size: 16px;
 }
 .inputName:focus {
   outline: none;
   text-align: center;
 }
 .inputEmail {
+  font-size: 16px;
+  color: rgba(212, 211, 211, 0.842);
   background: transparent;
   grid-row: 1/1;
   grid-column: 2/2;
@@ -35,17 +41,21 @@
   text-align: center;
   margin: 0 auto;
   border: none;
-  border-bottom: 2px solid rgba(91, 61, 116, 0.781);
+  border-bottom: 2px solid rgba(105, 92, 77, 0.863);
 }
 .inputEmail::placeholder {
   text-align: center;
   opacity: 0.5;
+  color: black;
+  font-size: 16px;
 }
 .inputEmail:focus {
   outline: none;
   text-align: center;
 }
 .inputPhone {
+  font-size: 16px;
+  color: rgba(212, 211, 211, 0.842);
   background: transparent;
   grid-row: 2/2;
   grid-column: 1/1;
@@ -53,11 +63,13 @@
   text-align: center;
   margin: 0 auto;
   border: none;
-  border-bottom: 2px solid rgba(91, 61, 116, 0.781);
+  border-bottom: 2px solid rgba(105, 92, 77, 0.863);
 }
 .inputPhone::placeholder {
   text-align: center;
   opacity: 0.5;
+  color: black;
+  font-size: 16px;
 }
 .inputPhone:focus {
   outline: none;
@@ -67,10 +79,12 @@
   grid-row: 2/2;
   grid-column: 3/3;
   border: none;
-  background: rgba(126, 79, 170, 0.589);
-  width: 60px;
+  background: transparent;
+  width: 80px;
   height: 30px;
-  color: white;
+  color: rgba(56, 33, 7, 0.863);
+  font-size: 16px;
+  font-weight: 900;
   text-transform: uppercase;
   margin: 10px auto;
 }
@@ -78,11 +92,10 @@
   grid-row: 2/2;
   grid-column: 2/2;
   border: none;
-  border-bottom: 2px solid rgba(126, 79, 170, 0.589);
   font-size: 14px;
-  color: rgba(126, 79, 170, 0.589);
-  margin: 10px 60px;
-  text-align: center;
+  color: rgba(63, 36, 6, 0.945);
+  margin: 10px auto;
+  font-size: 16px;
 }
 .inputPic:hover {
   cursor: pointer;
@@ -93,4 +106,50 @@
 }
 .submitButton:hover {
   cursor: pointer;
+  color: rgba(122, 134, 93, 0.863);
+}
+
+@media (max-width: 930px) {
+  .formWrap {
+    min-width: 400px;
+    margin: 10px auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 10px;
+  }
+}
+@media (max-width: 780px) {
+  .formWrap {
+    min-width: 300px;
+    max-width: 350px;
+    margin: 10px auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-gap: 10px;
+    height: 100%;
+  }
+  .submitButton {
+    grid-row: 5/5;
+    grid-column: 1/1;
+  }
+  .inputPhone {
+    grid-row: 3/3;
+    width: 100%;
+  }
+  .inputEmail {
+    grid-row: 2/2;
+    grid-column: 1/1;
+    width: 100%;
+  }
+  .inputName {
+    width: 100%;
+  }
+  .inputPic {
+    grid-row: 4/5;
+    grid-column: 1/1;
+  }
 }

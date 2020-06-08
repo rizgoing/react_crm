@@ -2,18 +2,29 @@
   display: grid;
 }
 .searchBar {
+  background: transparent;
   height: 30px;
   max-width: 500px;
   width: 450px;
   margin: 10px auto;
   border: none;
-  border-bottom: 2px solid rgba(91, 61, 116, 0.781);
+  border-bottom: 2px solid rgba(105, 92, 77, 0.863);
+  font-size: 16px;
+  color: rgba(53, 47, 39, 0.842);
+  text-align: center;
 }
 .searchBar::placeholder {
   text-align: center;
-  opacity: 0.5;
+  font-size: 20px;
+  color: rgb(65, 51, 44);
 }
 .searchBar:focus {
   outline: none;
   text-align: center;
+}
+@media (max-width: 780px) {
+  .searchBar {
+    margin-top: 80px;
+    width: 300px;
+  }
 }

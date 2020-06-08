@@ -1,7 +1,7 @@
 .avatar {
   display: grid;
-  width: 195px;
-  height: 195px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto;
 }
 .userNameAndEmail {
@@ -18,16 +18,60 @@
   margin: 20px auto;
   grid-column-gap: 2px;
   grid-row-gap: 5px;
-  width: 900px;
+  width: 850px;
 }
 .card {
   max-width: 200px;
   min-height: 200px;
-  background: #333;
+  background: rgba(75, 82, 60, 0.466);
   border-radius: 1px;
   text-decoration: none;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  -ms-border-radius: 1px;
-  -o-border-radius: 1px;
+  margin: 0 auto;
+}
+@media (max-width: 930px) {
+  .usersBlock {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    margin: 20px auto;
+    grid-column-gap: 2px;
+    grid-row-gap: 5px;
+    width: 700px;
+  }
+  .card {
+    max-width: 200px;
+    min-height: 200px;
+    background: rgba(105, 92, 77, 0.863);
+    border-radius: 1px;
+    text-decoration: none;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 780px) {
+  .usersBlock {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    margin: 20px auto;
+    grid-column-gap: 2px;
+    grid-row-gap: 5px;
+    width: 500px;
+  }
+  .card {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 700px) {
+  .usersBlock {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    margin: 20px auto;
+    grid-column-gap: 2px;
+    grid-row-gap: 5px;
+    width: 500px;
+  }
+  .card {
+    margin: 0 auto;
+  }
 }

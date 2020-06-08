@@ -55,7 +55,7 @@ const AddUser = ({ addUser }) => {
       <input
         type="tel"
         required
-        pattern="[7-9]{1}[0-9]{9}"
+        pattern="[7-9]{1}[0-9]{10}"
         title="Phone number with 7-9 and remaing 9 digit with 0-9"
         placeholder="Enter Your Phone number"
         onChange={(e) => setPhone(e.target.value)}
