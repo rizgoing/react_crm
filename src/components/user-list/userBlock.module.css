@@ -8,8 +8,24 @@
   padding: 0;
   margin: 10px 5px;
   color: #eee;
-  font-size: 16px;
+  font-size: 14px;
   word-wrap: break-word;
+}
+.deleteButton {
+  background: transparent;
+  border: none;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  opacity: 0.4;
+}
+.deleteButton:hover {
+  color: red;
+  cursor: pointer;
+  opacity: 1;
+}
+.links {
+  text-decoration: none;
 }
 .usersBlock {
   display: grid;
@@ -21,12 +37,13 @@
   width: 850px;
 }
 .card {
+  display: grid;
   max-width: 200px;
   min-height: 200px;
   background: rgba(75, 82, 60, 0.466);
   border-radius: 1px;
   text-decoration: none;
-  margin: 0 auto;
+  margin: 0;
 }
 @media (max-width: 930px) {
   .usersBlock {
@@ -37,14 +54,6 @@
     grid-column-gap: 2px;
     grid-row-gap: 5px;
     width: 700px;
-  }
-  .card {
-    max-width: 200px;
-    min-height: 200px;
-    background: rgba(105, 92, 77, 0.863);
-    border-radius: 1px;
-    text-decoration: none;
-    margin: 0 auto;
   }
 }
 @media (max-width: 780px) {
@@ -57,9 +66,6 @@
     grid-row-gap: 5px;
     width: 500px;
   }
-  .card {
-    margin: 0 auto;
-  }
 }
 @media (max-width: 700px) {
   .usersBlock {
@@ -71,7 +77,15 @@
     grid-row-gap: 5px;
     width: 500px;
   }
-  .card {
-    margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .usersBlock {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    margin: 20px auto;
+    grid-column-gap: 2px;
+    grid-row-gap: 5px;
+    width: 200px;
   }
 }

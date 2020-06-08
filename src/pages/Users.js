@@ -28,6 +28,13 @@ const Users = () => {
   }, []);
   console.log(users);
 
+  const handleDelete = (id) => {
+    const filteredUsers = users.filter((user) => {
+      return user.id !== id;
+    });
+    setUser(filteredUsers);
+  };
+
   // const handleSearch = (e) => {
   //   setSearch({ name: e });
   // };
@@ -42,7 +49,7 @@ const Users = () => {
     <div className={style.usersPage}>
       {/* <AddUser addUser={addUser} /> */}
       {/* <SearchUser search={handleSearch} /> */}
-      <UserList users={users} />
+      <UserList users={users} removeUser={handleDelete} />
     </div>
   );
 };
