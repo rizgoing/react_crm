@@ -20,8 +20,8 @@ const AddUser = ({ addUser }) => {
       <input
         type="text"
         required
-        pattern="[a-zA-Z]{3,32}"
-        title="Name should contains only letters"
+        //pattern="[a-zA-Z]{3,32}"
+        //title="Name should contains only letters"
         placeholder="Enter Your Username"
         onChange={(e) => setName(e.target.value)}
         className={style.inputName}
@@ -30,8 +30,8 @@ const AddUser = ({ addUser }) => {
       <input
         type="email"
         required
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-        title="E-mail should contains one @ and domain name"
+        //pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        // title="E-mail should contains one @ and domain name"
         placeholder="Enter Your Email"
         onChange={(e) => setEmail(e.target.value)}
         className={style.inputEmail}
@@ -43,7 +43,7 @@ const AddUser = ({ addUser }) => {
         Choose Avatar
         <input
           type="file"
-          required
+          // required
           hidden
           onChange={(event) => {
             setPic(URL.createObjectURL(event.target.files[0]));
@@ -55,8 +55,8 @@ const AddUser = ({ addUser }) => {
       <input
         type="tel"
         required
-        pattern="[7-9]{1}[0-9]{10}"
-        title="Phone number with 7-9 and remaing 9 digit with 0-9"
+        //pattern="[7-9]{1}[0-9]{10}"
+        //title="Phone number with 7-9 and remaing 9 digit with 0-9"
         placeholder="Enter Your Phone number"
         onChange={(e) => setPhone(e.target.value)}
         className={style.inputPhone}

@@ -6,32 +6,56 @@
   background-color: rgba(172, 152, 124, 0.192);
   padding: 20px;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-template-rows: auto;
 }
 .profilePic {
   max-width: 220px;
   max-height: 300px;
-  grid-row: 1/5;
+  grid-row: 1/9;
+  border: 3px solid rgba(54, 87, 74, 0.548);
+  margin: 0 auto;
 }
 .name {
   font-size: 22px;
   padding-left: 15px;
+  margin: 5px auto;
+  text-align: center;
+  grid-row: 1/1;
+  grid-column: 2/2;
+}
+.address {
+  grid-row: 5/5;
+  grid-column: 2/2;
+}
+.company {
+  grid-column: 7/7;
+  grid-column: 2/2;
+}
+.tel {
+  grid-column: 4/4;
+  grid-column: 2/2;
+}
+.zip {
+  grid-row: 6/6;
+  grid-column: 2/2;
 }
 .email {
-  font-size: 18px;
-  font-weight: 400;
-  padding-left: 15px;
+  grid-row: 2/2;
+  grid-column: 2/2;
 }
-.phone {
-  font-size: 18px;
-  font-weight: 400;
-  padding-left: 15px;
+.web {
+  grid-row: 3/3;
+  grid-column: 2/2;
+}
+.descript {
+  margin: 10px auto;
+  grid-row: 8/8;
+  grid-column: 2/2;
 }
 .buttonBack {
+  grid-column: 2/2;
   font-size: 20px;
   font-weight: 900;
-  grid-column: 2/2;
-  grid-row: 5/5;
   border: none;
   width: 60px;
   margin: 5px auto;

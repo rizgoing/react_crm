@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "./components/navbar/Navbar";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Users from "./components/users/Users";
+import Users from "./pages/Users";
 import UserDetails from "./components/users/UserDetails";
 
 function App() {
